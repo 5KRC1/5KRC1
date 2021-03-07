@@ -20,3 +20,4 @@ function removeActiveClasses(){
         e.classList.add('character');
     })
 }
+
