@@ -109,6 +109,7 @@ body{
 .character:hover{
     width: 500px;
     height: 750px;
+    z-index: inherit;
 }
 .char{
     position: absolute;
@@ -122,6 +123,7 @@ body{
 }
 .c{
     right: 3%;
+    z-index: 0;
 }
 /*========js card animation=======*/
 .active{
@@ -131,5 +133,5 @@ body{
     position: relative;
     box-shadow: 0 0 20px black;
     transition: .3s;
-    z-index: 2;
+    z-index: 10;
 }
