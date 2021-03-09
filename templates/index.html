@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="{{url_for('static', filename='/css/style.css')}}">
+    <!-- <link rel="stylesheet" href="{{url_for('static', filename='/css/style.css')}}"> -->
+    <link rel="stylesheet" href="/static/css/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,7 +32,7 @@
             CHOOSE THE CHARACTER WHOOSE PERSONALITY MATCHES YOURS THE MOST
         </h1>
         <div class="character-cards">
-            <div class="char a">
+            <div class="container">
                 <div class="character">
                     <img src="" alt="">
                     <div class="text-card">
@@ -40,8 +41,6 @@
                         </h1>
                     </div>
                 </div>
-            </div>
-            <div class="char b">
                 <div class="character">
                     <img src="" alt="">
                     <div class="text-card">
@@ -50,8 +49,6 @@
                         </h1>
                     </div>
                 </div>
-            </div>
-            <div class="char c">
                 <div class="character">
                     <img src="" alt="">
                     <div class="text-card">
@@ -60,9 +57,34 @@
                         </h1>
                     </div>
                 </div>
+                <div class="character">
+                    <img src="" alt="">
+                    <div class="text-card">
+                        <h1 class="text">
+                            <a href="">Ghost</a>
+                        </h1>
+                    </div>
+                </div>
+                <div class="character">
+                    <img src="" alt="">
+                    <div class="text-card">
+                        <h1 class="text">
+                            <a href="">Chef</a>
+                        </h1>
+                    </div>
+                </div>
+                <div class="character">
+                    <img src="" alt="">
+                    <div class="text-card">
+                        <h1 class="text">
+                            <a href="">Ninja</a>
+                        </h1>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <script src="{{url_for('static', filename='/js/app.js')}}"></script>
+    <!-- <script src="{{url_for('static', filename='/js/app.js')}}"></script> -->
+    <script src="/static/js/app.js"></script>
 </body>
 </html>

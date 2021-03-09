@@ -22,13 +22,14 @@ body{
 /*========navbar=========*/
 .nav-bar{
     width: 100%;
-    height: 50px;
+    height: 2.5em;
     background-color: var(--clr-grey);
     position: sticky;
     top: 0;
     z-index: 4;
 }
 .nav-links{
+    height: 100%;
     list-style: none;
     display: flex;
     justify-content: start;
@@ -36,6 +37,7 @@ body{
 }
 .nav-links li{
     margin: 10px;
+    font-size: 12px;
 }
 .nav-links li a{
     text-decoration: none;
@@ -44,7 +46,7 @@ body{
 /*============section1===========*/
 .intro{
     width: 100%;
-    height: 900px;
+    height: 700px;
     background-color: var(--clr-green);
     color: white;
     display: flex;
@@ -53,43 +55,54 @@ body{
     align-items: center;
 }
 .intro h1{
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     width: 80%
 }
 /*=========section2==========*/
 .characters{
-    height: 1000px;
+    height: 600px;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     position: relative;
-    overflow: hidden;
+
 }
 .character-cards{
-    height: 800px;
-    width: 600%;
+    width: 100%;
+    height: 400px;
     display: flex;
     align-items: center;
-    margin: 25px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;    
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    padding: 0 50px;
+    align-items: center;
 }
 .characters h1{
+    font-size: 1em;
     text-align: center;
-    z-index: 3;
+    width: 80%;
+    margin-left: 10%;
 }
 .character{
     background-color: var(--clr-grey);
-    width: 400px;
-    height: 600px;
+    width: 200px;
+    height: 300px;
     position: relative;
     box-shadow: 0 0 20px black;
     transition: .3s;
-    margin: 0 100px;
-    z-index: 3;
+    margin: 0 50px;
+    flex-shrink: 0;
+    scroll-snap-align: center;
 }
 .text-card{
     background-color: var(--clr-green);
-    width:100%;
+    width: 100%;
     height: 35%;
     position: absolute;
     bottom: 0;
@@ -100,38 +113,74 @@ body{
     align-items: center;
     font-family: var(--ff-charText);
     font-size: 3rem;
-    font-weight: lighter;
 }
 .text a{
     text-decoration: none;
     color: white;
 }
 .character:hover{
-    width: 500px;
-    height: 750px;
-    z-index: inherit;
-}
-.char{
-    position: absolute;
-}
-.a{
-    left: 3%;
-}
-.b{
-    left: 50%;
-    transform: translate(-50%, 0);
-}
-.c{
-    right: 3%;
-    z-index: 0;
+transform: size(1.5, 1.5);
 }
 /*========js card animation=======*/
 .active{
-    width: 50vw;
-    height: 90vh;
+    width: 325px;
+    height: 300px;
     background-color: var(--clr-grey);
     position: relative;
     box-shadow: 0 0 20px black;
     transition: .3s;
-    z-index: 10;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    margin: 0 50px;
+}
+
+/*========Desktop========*/
+@media screen and (min-width: 770px){
+    .nav-links li{
+        margin-left: 30px;
+        font-size: 15px;
+    }
+    .intro{
+        height: 100vh;
+    }
+    .characters{
+        height: 100vh;
+    }
+    .intro h1{
+        font-size: 2rem;
+        width: 80%
+    }
+    .characters h1{
+        font-size: 1.5rem;
+    }
+    .text a{
+        font-size: 4rem;
+    }
+    .character{
+        height: 500px;
+        width: 350px;
+    }
+    .character-cards{
+        height: 600px;
+    }
+    .active{
+        height: 550px;
+        width: 700px;
+    }
+}
+@media screen and (min-width: 1200px){
+    .nav-bar{
+        height: 3.5em;
+    }
+    .nav-links li{
+        margin: 15px 20px;
+        font-size: 15px;
+    }
+    .intro h1{
+        font-size: 3rem;
+        width: 80%
+    }
+    .characters h1{
+        font-size: 2rem;
+    }
 }
