@@ -74,12 +74,12 @@ body{
     display: flex;
     align-items: center;
     overflow-x: scroll;
-    scroll-snap-type: x mandatory;   
-    /* scrollbar-width: none;  */
+    scroll-snap-type: x mandatory; 
+    scrollbar-width: none;  
 }
-/* #char-cards::-webkit-scrollbar{
+#char-cards::-webkit-scrollbar{
     display: none !important;
-} */
+}
 .container{
     display:flex;
     padding: 0 50px;
@@ -165,6 +165,7 @@ body{
     }
     .character-cards{
         height: 650px;
+        scrollbar-width: initial;
     }
     .active{
         height: 550px;
@@ -173,6 +174,12 @@ body{
     .character:hover{
         height: 600px;
         width: 400px;
+    }
+    #char-cards::-webkit-scrollbar{
+        display: all !important;
+    }
+    #char-cards::-webkit-scrollbar{
+        display: initial !important;
     }
 }
 @media screen and (min-width: 1200px){
