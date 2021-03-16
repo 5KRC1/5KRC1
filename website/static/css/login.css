@@ -1,0 +1,55 @@
+
+:root{
+    --ff-charText: 'Romanesco', cursive;
+    --ff-introText: 'Noto Sans JP', sans-serif;
+
+    --clr-green: #0B3522;
+    --clr-grey: #DADADA;
+
+}
+
+*{
+    margin:0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    margin:0;
+    padding: 0;
+    font-family: var(--ff-introText);
+}
+
+/*=========main===========*/
+.text{
+    margin: 20px 80px;
+    font-size: 2em;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.login{
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+    margin: 50px;
+}
+.formContainer input{
+    outline: none;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 2px;
+    margin: 10px;
+    transition: .3s;
+}
+.formContainer input:focus{
+    background-color: var(--clr-grey);
+}
+.loginBTN{
+    color: white;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 2px;
+    background-color: var(--clr-green);
+}

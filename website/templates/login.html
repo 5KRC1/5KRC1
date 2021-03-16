@@ -1,12 +1,18 @@
 {% extends 'base.html' %}
 {% block title %} Login {% endblock %}
+{% block css %}
+    <link rel="stylesheet" href="{{url_for('static', filename='/css/style.css')}}"> 
+    <link rel="stylesheet" href="{{url_for('static', filename='css/login.css')}}">
+{% endblock %}
 {% block content %}
-    <form method="POST" class="login">
+    <div class="container">
         <h3 class="text">Log In</h3>
-        <div class="formContainer">
-            <input type="email" name='email' placeholder='Your email:' >
-            <input type="password" name='password' placeholder='Your password:' >
-        </div>
-        <button class="login" type="submit">Log In</button>
-    </form>
+        <form method="POST" class="login">
+            <div class="formContainer">
+                <input type="email" name='email' placeholder='Your email:' >
+                <input type="password" name='password' placeholder='Your password:' >
+            </div>
+            <button class="loginBTN" type="submit">Log In</button>
+        </form>
+    </div>
 {% endblock %}

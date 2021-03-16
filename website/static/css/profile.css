@@ -1,0 +1,20 @@
+:root{
+    --ff-charText: 'Romanesco', cursive;
+    --ff-introText: 'Noto Sans JP', sans-serif;
+
+    --clr-green: #0B3522;
+    --clr-grey: #DADADA;
+
+}
+
+*{
+    margin:0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    margin:0;
+    padding: 0;
+    font-family: var(--ff-introText);
+}
+/*========body\===========*/

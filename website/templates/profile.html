@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %}{{ user }}{% endblock %}
+{% block css %} 
+    <link rel="stylesheet" href="{{url_for('static', filename='/css/style.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/characters.css')}}">
+{% endblock %}
+{% block content %}
+<section class="section first">
+    <div class="container">
+
+    </div>
+</section>
+<section class="section  second">
+    <div class="container">
+        <h1>{{ user }}</h1>
+        <p></p>
+    </div>
+</section>
+{% endblock %}

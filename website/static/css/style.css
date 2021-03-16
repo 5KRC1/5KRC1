@@ -31,7 +31,7 @@ body{
 .nav-links{
     height: 100%;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
     list-style: none;
 }
@@ -69,11 +69,7 @@ body{
     display: flex;
     align-items: center;
     overflow-x: scroll;
-    scroll-snap-type: x mandatory; 
-    scrollbar-width: none;  
-}
-#char-cards::-webkit-scrollbar{
-    display: none !important;
+    scroll-snap-type: x mandatory;  
 }
 .container{
     display:flex;
@@ -171,20 +167,13 @@ body{
         width: 400px;
     }
     #char-cards::-webkit-scrollbar{
-        display: all !important;
+        display: initial !important;
     }
     #char-cards::-webkit-scrollbar{
-        display: initial !important;
+        display: all !important;
     }
 }
 @media screen and (min-width: 1200px){
-    .nav-bar{
-        height: 3.5em;
-    }
-    .nav-links li{
-        margin: 15px 20px;
-        font-size: 15px;
-    }
     .intro h1{
         font-size: 3rem;
         width: 80%
