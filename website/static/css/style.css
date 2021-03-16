@@ -31,11 +31,13 @@ body{
 .nav-links{
     height: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     align-items: center;
+    list-style: none;
 }
-.nav-links ul{
-    display: flex;
+.nav-links li a{
+    text-decoration: none;
+    color: black;
 }
 /*============section1===========*/
 .intro{
@@ -60,7 +62,6 @@ body{
     flex-direction: column;
     justify-content: space-evenly;
     position: relative;
-
 }
 .character-cards{
     width: 100%;
